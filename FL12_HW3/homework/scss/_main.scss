@@ -1,0 +1,204 @@
+@mixin button {
+	border: 0;
+	border-radius: 2px;
+	color: #FFFFFF;
+	background-color: $color_button;
+	width: 120px;
+	margin-top: 20px;
+	margin-right: 120px;
+	font-family: $font_family;
+	font-size: 90%;
+	font-weight: bold;
+}
+@mixin logo {
+	height: 45px;
+			img {
+				float: left;
+				margin-right: 10px;
+			}
+			p {
+				margin: 0;
+				padding-top: 4px;
+				height: 40px;
+				width: 108px;
+				word-break: break-all;
+				font-weight: bold;
+				font-family: $font_family;
+				text-align: center;
+				span {
+					font-weight: 100;
+					font-size: 50%;
+				}
+			}
+}
+@mixin footer {
+	font-family: $font_footer;
+	font-size: x-small;
+	font-weight: 100;
+}
+@mixin font_size_weight($size, $weight) {
+	font-size: $size;
+	font-weight: $weight;
+}
+.header {
+	margin: auto;
+	height: 600px;
+	max-width: $max_width;
+	background-image: $m_h; 
+	background-position: 100% 50%;
+	border-radius: 0 0 37%/37% 0;
+	.header-wrap {
+		height: 250px;
+		margin-left: 160px;
+		padding-top: 16px;
+		color: $color_header_wrap;
+		.landing-logo {
+			@include logo;
+		}
+		.header_heading {
+			width: 400px;
+			margin-bottom: 45px;
+			@include font_size_weight(320%, bold);
+			font-family: $font_family;
+		}
+		.header_text {
+			opacity: 0.6;
+			width: 480px;
+			line-height: 1.5;
+			font-family: $font_family;
+			@include font_size_weight(80%, lighter);
+		}
+		.header_button {
+			@include button;
+		}
+		.login {
+			color: $color_login;
+			font-family: $font_family_Hind;
+			font-weight: bolder;
+		}
+	}
+}
+$status-height: (
+		heading: 120px,
+		text: 100px,
+		button: 40px,
+);
+.header {
+	@each $status, $height in $status-height {
+		&_#{$status} {
+			height: $height;
+		}
+	}
+}
+.section{
+	position: relative;
+	z-index: 2;
+	margin: auto;
+	max-width: $max_width;
+	.section_text {
+		text-align: center;
+		@include font_size_weight(210%, 500);
+		font-family: $font_family;
+		color: $color_section_text;
+	}
+	.section_card_wrap {
+		.section_card {
+			margin-left: 345px;
+			margin-right: 330px;
+			margin-bottom: 30px; 
+			padding: 15px;
+			border-radius: 5px;
+			background: $color_section; 
+			font-family: $font_family_Hind;
+			color: $color_section_card_wrap;
+			.section_card_img {
+				width: 375px;
+				height: 255px;
+			}
+			.section_card_right_container {
+				width: 500px;
+				float: right;
+				text-align: center;
+				.section_card_heading {
+					@include font_size_weight(115%, bolder);
+				}
+				.section_card_text {
+					opacity: 80%;
+					@include font_size_weight(75%, 200);
+					text-align: justify;
+					margin-left: 45px;
+					margin-right: 70px;
+				}
+				.section_link {
+					color: $color_section_card_wrap ;
+					font-size: 75%;
+					opacity: 80%;
+				}
+			}
+		}
+	}
+	.section_banner {
+		height: 110px;
+		margin-top: 110px;
+		margin-left: 325px;
+		margin-right: 310px;
+		border-radius: 5px;
+		background: linear-gradient(to right, $color_button, $color_gradient);
+		padding-top: 10px;
+		color: $color_bunner;
+		.section_banner_text_wrap{
+			float: left;
+			width: 610px;
+			margin-left: 110px;
+			margin-right: 0px;
+			.section_banner_heading {
+				margin-top: 10px;
+				margin-bottom: 10px;
+				font-family: $font-family;
+				@include font_size_weight(150%, bold);
+			}
+			.section_banner_text {
+				@extend .section_banner_heading;
+				opacity: 50%;
+				color: $color_bunner_text;
+				@include font_size_weight(80%, lighter);
+			}
+		}
+		.section_banner_button{
+			@include button;
+			display: block;
+			height: 38px;
+			margin-top: 30px;
+		}
+	}
+}
+.footer {
+	@extend .section;
+	height: 192px;
+	z-index: 1;
+	bottom: 60px;
+	background: $color_footer;
+	color: $font_color_footer;
+	.footer-wrap {
+		opacity: 80%;
+		margin-left: 160px;
+		padding-top: 100px;
+		.footer_logo {
+			@include logo;
+			float: left;
+		}
+		.footer_text {
+			width: 275px;
+			float: left;
+			margin-top: 0px;
+			margin-left: 365px;
+			@include footer;
+		}
+		.footer-cr {
+			width: 200px;
+			height: 100px;
+			margin-left: 360px;
+			@include footer;
+		}
+	}
+}

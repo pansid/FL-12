@@ -1,0 +1,189 @@
+.header {
+  margin: auto;
+  height: 600px;
+  max-width: 1600px;
+  background-image: url("C:/Users/Sergey/Desktop/FL12_HW3/homework/img/m-h-night.jpg");
+  background-position: 100% 50%;
+  border-radius: 0 0 37%/37% 0; }
+  .header .header-wrap {
+    height: 250px;
+    margin-left: 160px;
+    padding-top: 16px;
+    color: #FFFFFF; }
+    .header .header-wrap .landing-logo {
+      height: 45px; }
+      .header .header-wrap .landing-logo img {
+        float: left;
+        margin-right: 10px; }
+      .header .header-wrap .landing-logo p {
+        margin: 0;
+        padding-top: 4px;
+        height: 40px;
+        width: 108px;
+        word-break: break-all;
+        font-weight: bold;
+        font-family: "Source Sans Pro", sans-serif;
+        text-align: center; }
+        .header .header-wrap .landing-logo p span {
+          font-weight: 100;
+          font-size: 50%; }
+    .header .header-wrap .header_heading {
+      width: 400px;
+      margin-bottom: 45px;
+      font-size: 320%;
+      font-weight: bold;
+      font-family: "Source Sans Pro", sans-serif; }
+    .header .header-wrap .header_text {
+      opacity: 0.6;
+      width: 480px;
+      line-height: 1.5;
+      font-family: "Source Sans Pro", sans-serif;
+      font-size: 80%;
+      font-weight: lighter; }
+    .header .header-wrap .header_button {
+      border: 0;
+      border-radius: 2px;
+      color: #FFFFFF;
+      background-color: #EDCD30;
+      width: 120px;
+      margin-top: 20px;
+      margin-right: 120px;
+      font-family: "Source Sans Pro", sans-serif;
+      font-size: 90%;
+      font-weight: bold; }
+    .header .header-wrap .login {
+      color: #FFFFFF;
+      font-family: "Hind", sans-serif;
+      font-weight: bolder; }
+
+.header_heading {
+  height: 120px; }
+.header_text {
+  height: 100px; }
+.header_button {
+  height: 40px; }
+
+.section, .footer {
+  position: relative;
+  z-index: 2;
+  margin: auto;
+  max-width: 1600px; }
+  .section .section_text, .footer .section_text {
+    text-align: center;
+    font-size: 210%;
+    font-weight: 500;
+    font-family: "Source Sans Pro", sans-serif;
+    color: #FFFFFF; }
+  .section .section_card_wrap .section_card, .footer .section_card_wrap .section_card {
+    margin-left: 345px;
+    margin-right: 330px;
+    margin-bottom: 30px;
+    padding: 15px;
+    border-radius: 5px;
+    background: #2E3946;
+    font-family: "Hind", sans-serif;
+    color: #FFFFFF; }
+    .section .section_card_wrap .section_card .section_card_img, .footer .section_card_wrap .section_card .section_card_img {
+      width: 375px;
+      height: 255px; }
+    .section .section_card_wrap .section_card .section_card_right_container, .footer .section_card_wrap .section_card .section_card_right_container {
+      width: 500px;
+      float: right;
+      text-align: center; }
+      .section .section_card_wrap .section_card .section_card_right_container .section_card_heading, .footer .section_card_wrap .section_card .section_card_right_container .section_card_heading {
+        font-size: 115%;
+        font-weight: bolder; }
+      .section .section_card_wrap .section_card .section_card_right_container .section_card_text, .footer .section_card_wrap .section_card .section_card_right_container .section_card_text {
+        opacity: 80%;
+        font-size: 75%;
+        font-weight: 200;
+        text-align: justify;
+        margin-left: 45px;
+        margin-right: 70px; }
+      .section .section_card_wrap .section_card .section_card_right_container .section_link, .footer .section_card_wrap .section_card .section_card_right_container .section_link {
+        color: #FFFFFF;
+        font-size: 75%;
+        opacity: 80%; }
+  .section .section_banner, .footer .section_banner {
+    height: 110px;
+    margin-top: 110px;
+    margin-left: 325px;
+    margin-right: 310px;
+    border-radius: 5px;
+    background: linear-gradient(to right, #EDCD30, #B82C52);
+    padding-top: 10px;
+    color: #FFFFFF; }
+    .section .section_banner .section_banner_text_wrap, .footer .section_banner .section_banner_text_wrap {
+      float: left;
+      width: 610px;
+      margin-left: 110px;
+      margin-right: 0px; }
+      .section .section_banner .section_banner_text_wrap .section_banner_heading, .footer .section_banner .section_banner_text_wrap .section_banner_heading, .section .section_banner .section_banner_text_wrap .section_banner_text, .footer .section_banner .section_banner_text_wrap .section_banner_text {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-family: "Source Sans Pro", sans-serif;
+        font-size: 150%;
+        font-weight: bold; }
+      .section .section_banner .section_banner_text_wrap .section_banner_text, .footer .section_banner .section_banner_text_wrap .section_banner_text {
+        opacity: 50%;
+        color: #FFFFFF;
+        font-size: 80%;
+        font-weight: lighter; }
+    .section .section_banner .section_banner_button, .footer .section_banner .section_banner_button {
+      border: 0;
+      border-radius: 2px;
+      color: #FFFFFF;
+      background-color: #EDCD30;
+      width: 120px;
+      margin-top: 20px;
+      margin-right: 120px;
+      font-family: "Source Sans Pro", sans-serif;
+      font-size: 90%;
+      font-weight: bold;
+      display: block;
+      height: 38px;
+      margin-top: 30px; }
+
+.footer {
+  height: 192px;
+  z-index: 1;
+  bottom: 60px;
+  background: #2E3946;
+  color: #F4F5F5; }
+  .footer .footer-wrap {
+    opacity: 80%;
+    margin-left: 160px;
+    padding-top: 100px; }
+    .footer .footer-wrap .footer_logo {
+      height: 45px;
+      float: left; }
+      .footer .footer-wrap .footer_logo img {
+        float: left;
+        margin-right: 10px; }
+      .footer .footer-wrap .footer_logo p {
+        margin: 0;
+        padding-top: 4px;
+        height: 40px;
+        width: 108px;
+        word-break: break-all;
+        font-weight: bold;
+        font-family: "Source Sans Pro", sans-serif;
+        text-align: center; }
+        .footer .footer-wrap .footer_logo p span {
+          font-weight: 100;
+          font-size: 50%; }
+    .footer .footer-wrap .footer_text {
+      width: 275px;
+      float: left;
+      margin-top: 0px;
+      margin-left: 365px;
+      font-family: "Fresca", sans-serif;
+      font-size: x-small;
+      font-weight: 100; }
+    .footer .footer-wrap .footer-cr {
+      width: 200px;
+      height: 100px;
+      margin-left: 360px;
+      font-family: "Fresca", sans-serif;
+      font-size: x-small;
+      font-weight: 100; }
