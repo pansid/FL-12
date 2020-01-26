@@ -1,0 +1,36 @@
+body {
+	cursor: pointer;
+}
+
+li {
+	list-style-type: none;
+}
+
+i.material-icons {
+	color: #FFB840;
+	float: left;
+}
+
+li.material-icons {
+	float: left;
+	color: #8F9999;
+}
+
+.p-folder {
+	padding-left: 27px;
+	margin-top: 1px;
+	margin-bottom: 1px;
+	font-size: 130%;
+}
+
+.p-file {
+	padding-left: 27px;
+	margin-top: 1px;
+	margin-bottom: 1px;
+	font-size: 130%;
+}
+
+p:hover {
+	background: #EDF4F4;
+}
+
