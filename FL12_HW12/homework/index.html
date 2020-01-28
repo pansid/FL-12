@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Homework 12 - Simple TODO List</title>
+  <link rel="stylesheet" href="./assets/styles.css">
+</head>
+<body>
+  <div id="root">
+  	<div id="main_page">
+	  	<div class="button">
+	  		<button type="button" name="add_set" id="add_set"><a href="#/add">Add new</a></button>
+	  	</div>
+	  	<div class="list_container">
+	  		<ul></ul>
+	  	</div>
+	</div>
+	<div class="add_new" id="/add">
+		<form name="newset">
+			<input type="text" name="name" placeholder="enter name"><br>
+			<button type="button" name="add_terms">Add terms</button>
+			<button type="button" name="save"><a href="#main_page">Save changes</a></button>
+			<button type="button" name="cancel"><a href="#main_page">Cancel</a></button>
+			<div class="term_definition" id="term_definition">
+				<input type="text" name="term" placeholder="enter term">
+				<input type="text" name="definition" placeholder="enter definition">
+				<button type="button" name="remove">Remove</button>
+			</div>
+		</form>
+	</div>
+	<div class="modify" id="/modify/:item">
+		<form name="modifyset">
+			<input type="text" name="name"><br>
+			<input type="text" name="term"><br>
+			<input type="text" name="definition"><br>
+			<button type="button" name="save"><a href="#main_page">Save changes</a></button>
+			<button type="button" name="cancel"><a href="#main_page">Cancel</a></button>
+		</form>
+	</div>
+  </div>
+  <script src="./src/app.js"></script>
+</body>
+</html>

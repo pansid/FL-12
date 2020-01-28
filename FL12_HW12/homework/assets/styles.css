@@ -1,0 +1,33 @@
+.button {
+	text-align: right;
+}
+
+#add_set {
+	font-size: 150%;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+span:hover {
+	cursor: pointer;
+	background: blue;
+}
+
+.add_new {
+	margin-top: 30px;
+}
+
+button {
+	margin-right: 20px;
+}
+
+input {
+	margin-bottom: 15px;
+}
+
+#term_definition {
+	margin-top: 15px;
+}
